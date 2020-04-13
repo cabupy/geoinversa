@@ -7,7 +7,7 @@ router.get('/:lat/:lng', async (req, res, next) => {
   try {
     const rows = await db.query(sqlSelect)
     if (rows.length) {
-      res.status(200).json({ success: true, data: rows[0], ip: req.ip })
+      res.status(200).json({ success: true, data: rows[0], ip: req.ips })
     } else {
       res.status(404).json({ success: false, data: {}, message: 'No se obtuvieron resultados.' })
     } 
