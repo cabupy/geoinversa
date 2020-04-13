@@ -1,0 +1,43 @@
+{
+  "name": "geoinversa",
+  "version": "1.0.0",
+  "description": "API para devolver direcciones mediante coordenadas decimales.",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/cabupy/geoinversa.git"
+  },
+  "keywords": [
+    "geoinversa",
+    "mapas",
+    "direccion",
+    "mapa",
+    "direcciones",
+    "coordenadas"
+  ],
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": false,
+    "useTabs": false,
+    "singleQuote": true,
+    "bracketSpacing": true
+  },
+  "author": "Cabu Vallejos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cabupy/geoinversa/issues"
+  },
+  "homepage": "https://github.com/cabupy/geoinversa#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pg": "^8.0.2",
+    "volleyball": "^1.5.1"
+  }
+}
