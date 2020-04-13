@@ -9,17 +9,29 @@ const cors = require('cors')
 const app = express()
 const routes = require('./routes')
 
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
 app.use(
   cors({
-    methods: ['OPTIONS', 'GET', 'POST'],
+    methods: ['OPTIONS', 'GET'],
     credentials: true,
     maxAge: 3600,
     preflightContinue: false,
   })
 )
+
+// Algunas cuestiones para estar detras de NGINX
+app.set('trust proxy', true)
+app.set('strict routing', true)
+app.set('case sensitive routing', true)
+// Agragamos el header powered-by Vamyal S.A. en un middleware
+app.set('x-powered-by', false)
+app.use( (req, res, next) => {
+  res.header('X-Powered-By', 'Cabu Vallejos <cabu.dev>');
+  res.header('X-Hello-Human', 'Hola humano !');
+  next();
+})
 
 app.use(volleyball)
 
