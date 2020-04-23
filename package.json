@@ -16,7 +16,9 @@
     "direccion",
     "mapa",
     "direcciones",
-    "coordenadas"
+    "coordenadas",
+    "paraguay",
+    "argentina"
   ],
   "prettier": {
     "trailingComma": "es5",
@@ -39,5 +41,8 @@
     "express": "^4.17.1",
     "pg": "^8.0.2",
     "volleyball": "^1.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
   }
 }

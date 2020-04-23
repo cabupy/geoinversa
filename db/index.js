@@ -1,5 +1,6 @@
 const pg = require('pg')
 
+// esto se setea en el archivo .env, en la raiz del proyecto
 const postgres = {
   database: process.env.PG_DB,
   host: process.env.PG_HOST,

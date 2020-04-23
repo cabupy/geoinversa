@@ -25,7 +25,7 @@ app.use(
 app.set('trust proxy', true)
 app.set('strict routing', true)
 app.set('case sensitive routing', true)
-// Agragamos el header powered-by Vamyal S.A. en un middleware
+// Agragamos el header powered-by en un middleware
 app.set('x-powered-by', false)
 app.use( (req, res, next) => {
   res.header('X-Powered-By', 'Cabu Vallejos <cabu.dev>');
