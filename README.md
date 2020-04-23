@@ -35,7 +35,7 @@ PG_PASS='postgres
 
 Descargar la BD Postgresql + Postgis
 
-Archivo: [osm_ar.sql.bzip2](https://s3.vamyal.com/osm_ar.sql.bz2) 
+Archivo: [osm_ar.sql.bzip2](http://s3.vamyal.com/osm_ar.sql.bz2) 
 
 ##### Levantar el proyecto node (en desarrollo)
 
