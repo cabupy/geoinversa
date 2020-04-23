@@ -2,6 +2,12 @@
 
 > API para devolver direcciones mediante coordenadas (lng, lat) decimales.
 
+##### Probado con:
+
+- PostgreSQL 12.2
+- PostGIS 2.5
+- node 12.16.2
+
 ###### Clonar el proyecto
 
 ```bash
@@ -51,3 +57,5 @@ Usar systemctl o en su defecto pm2.
 ### Autor
 
 - Carlos Vallejos, `Vamyal S.A.`
+
+### Licencia MIT: [Licencia](https://github.com/cabupy/geoinversa/blob/master/LICENSE)
